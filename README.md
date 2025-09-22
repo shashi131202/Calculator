@@ -1,36 +1,40 @@
 # 🧮 Calculator CLI App
 
-A simple command-line calculator built in **Python**.  
-It supports the four basic arithmetic operations: **Addition, Subtraction, Multiplication, and Division**.  
-The app runs in a loop until the user chooses to exit.  
+A simple **Command-Line Calculator** built with Python.  
+This project demonstrates the use of **functions, loops, and user input handling** in a clean and structured way.  
 
 ---
 
 ## 🚀 Features
-- Addition (+)  
-- Subtraction (−)  
-- Multiplication (×)  
-- Division (÷) with **zero division error handling**  
-- Input validation for non-numeric values  
-- User-friendly menu-based interface  
+- Perform basic arithmetic operations:
+  - ➕ Addition  
+  - ➖ Subtraction  
+  - ✖️ Multiplication  
+  - ➗ Division (with division-by-zero handling)  
+- Loop continues until the user chooses to exit  
+- Handles invalid input gracefully  
+- Beginner-friendly, easy to extend  
 
 ---
 
 ## 📂 Project Structure
-calculator/
-│
-├── calculator.py # Main program file
-└── README.md # Project documentation
+```
 
+calculator-cli/
+│
+├── calculator.py   # Main Python program
+└── README.md       # Documentation
+
+````
 
 ---
 
 ## ⚙️ How It Works
-1. The app shows a menu with operation choices.  
-2. The user selects an operation (1–4) or exits (5).  
+1. The program displays a menu with operation choices.  
+2. The user selects an option (`1–4`) or exits (`5`).  
 3. The user enters two numbers.  
-4. The app performs the operation and displays the result.  
-5. The loop continues until the user selects Exit.  
+4. The program performs the selected operation and displays the result.  
+5. The loop continues until the user selects **Exit**.  
 
 ---
 
@@ -38,13 +42,21 @@ calculator/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/calculator-cli.git
+git clone https://github.com/your-username/calculator-cli.git
 cd calculator-cli
+````
 
-2. Run the program
+### 2. Run the program
+
+```bash
 python calculator.py
+```
 
-3. Example Run
+---
+
+## 🖥️ Example Run
+
+```
 --- Calculator Menu ---
 1. Add (+)
 2. Subtract (-)
@@ -55,22 +67,21 @@ Enter choice (1-5): 1
 Enter first number: 10
 Enter second number: 5
 Result: 15.0
+```
 
-🛡️ Error Handling
+---
 
-Invalid Input → If the user enters a non-numeric value, the program shows an error.
+## 🛡️ Error Handling
 
-Division by Zero → Gracefully handled with an error message.
+* **Invalid Input** → If the user enters non-numeric values, the program shows an error.
+* **Division by Zero** → Gracefully handled with an error message.
+* **Invalid Menu Choice** → Prompts the user to select from available options.
 
-Invalid Choice → Prompts user to select a valid option.
+---
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 
-Exponentiation and Square Root functions
-
-Memory storage for last result
-
-Support for more advanced operations
-
-
+* Add more operations (exponentiation, square root, modulus)
+* Store and reuse the last result (memory feature)
+* Improve UI with colorized terminal output
 ---
